@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 align="center"> Sample Form</h1>
+    </header>
+    <div>
+        <label class="header">Profile Photo:</label>
+        <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+    </div><br>
+    <div>
+        <fieldset>
+            <legend>Personal Info</legend>
+        <label for="name"> Name&colon;</label>
+        <input type="text" id="name" name="name" placeholder="First Name">
+        <input type="text" id="name" name="name" placeholder="Middle Name">
+        <input type="text" id="name" name="name" placeholder="Surname"> <br><br>
+       <label for="password"> Set Password  &colon;</label>
+       <input type="password"  id="password" name="Password"> <br><br>
+       <label for="contact">Contact No.:</label>
+        <input type="tel" id="contact" name="contact" placeholder="123-45-6789"><br><br>
+        <label for="dob">Dob</label>
+        <input type="date" id="dob" name="dob">
+    
+    <br>
+    <div>
+        <label for="address">Address:</label>
+        <textarea  rows="" cols="30" name="address" id="address"></textarea>
+    
+    </div>
+    <br>
+    <div>
+        <label for="gender">Gender &colon;</label>
+       <label for="Male">
+            <input type="radio" name="gender" id="Male">Male
+       </label>
+       <label for="Female">
+         <input type="radio" name="gender" id="Female">Female
+       </label>
+    </div>
+    </div>
+    </fieldset>
+   
+    <br>
+    <div>
+        <fieldset>
+            <legend>Skills</legend>
+            <input type="checkbox" name="skills" id="skill1">
+            <label for="sklii1" >Java</label>
+            <input type="checkbox" name="skills" id="skill2">
+            <label for="sklii2">DotNet</label>
+            <input type="checkbox" name="skills" id="skill3">
+            <label for="sklii3">C++</label>
+      </fieldset>
+    </div>
+    <br>
+    <div>
+        <fieldset>
+                <legend>Educational Details </legend>
+            <div>
+                    <label for="education"> Select the highest Qualification</label>
+                    <select name="education" id="education">
+                            <option value="graduation">Graduation</option>
+                            <option value="diploma">Diploma</option>
+                            <option value="ssc">SSC</option>
+                    </select>
+            </div>
+            <br>
+            <div>
+                <label for="file-select">Upload Document &colon;</label>
+                <input type="file" name="upload" id="file-select">
+            </div>
+    </fieldset>
+    </div>
+    <br>
+    <div>
+        <button type="button" onclick="alert('Successfully Register')">Submit</button>
+        <input type="reset">
+    </div>
+
+
+    <!-- <label>
+        <div> Name       : <input type="text"> </div>
+        <div>  Email     : <input type="text"></div>
+        <div> UserName   : <input type="text"> </div>
+        <div>  Password  : <input type="text"> </div>
+        <input type="button" value="Submit">
+
+    </label> -->
+
+
+   
+</body>
+</html>

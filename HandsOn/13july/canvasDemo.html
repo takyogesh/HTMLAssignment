@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload =function()
+        {
+            var canvas=document.getElementById("myCanvas");
+            var draw=canvas.getContext("2d");
+            draw.moveTo(100,100);
+            draw.lineTo(200,100);
+            draw.stroke();
+        };
+    </script>
+    <script>
+         window.onload =function(){
+            var canvas=document.getElementById("myCanvas");
+            var draw=canvas.getContext("2d");
+            draw.rect(100,50,200,100);
+            draw.stroke();
+        };
+
+        window.onload =function()
+        {
+            var canvas=document.getElementById("myCanvas");
+            var draw=canvas.getContext("2d");
+            draw.arc(150, 100, 70, 0, 2 * Math.PI, false);
+            draw.stroke();
+        };
+        window.onload =function()
+        {
+            var canvas=document.getElementById("myCanvas");
+            var draw=canvas.getContext("2d");
+            draw.arc(160, 100, 70, 0, 2 * Math.PI, false);
+            draw.fillStyle="green";
+            draw.fill();
+            draw.stroke();
+        };
+        window.onload =function()
+        {
+            var canvas=document.getElementById("myCanvas");
+            var draw=canvas.getContext("2d");
+            draw.arc(200, 100, 200, 150, 2 * Math.PI, false);
+            draw.lineWidth = 2;
+            draw.strokeStyle = "red";
+            draw.stroke();
+        };
+
+    </script>
+    <style>
+        canvas{
+            background: rgb(162, 197, 230);
+        }
+    </style>
+</head>
+<body style="background:rgb(37, 27, 27) ;">
+    
+    <canvas id="myCanvas" width="800" height="400" ></canvas>
+</body>
+</html>
